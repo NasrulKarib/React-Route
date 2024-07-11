@@ -1,0 +1,22 @@
+React-router-dom Hooks that are used here:
+
+    useSearchParam:
+        ~ It is used to read and modify the query parameters of the URL in a React component. 
+        ~ Easily read and update URL query parameters.
+        ~ Maintain state through URL parameters, making it shareable and bookmarkable.
+        ~ Handle routing based on query parameters.
+  
+    useParams:
+       ~ It allows you to access the parameters of the current route specified in the URL path. 
+       ~ This hook can be used to retrieve the 'title' parameter from the URL.
+    
+    useLocation:
+       ~ This hook allows you to access the current location object, containing information about the URL the app is currently displaying.
+       ~ When navigating between routes, we can pass additional state data.
+       ~ We can get details about the current URL, such as the pathname, search parameters, and hash.
+
+    useNavigate:
+      ~ Navigate to different routes based on logic rather than just through <Link> components.
+      ~ Navigate based on conditions, such as form validation or user authentication status.
+      ~ Redirect users after certain actions, like logging in or submitting a form.
+

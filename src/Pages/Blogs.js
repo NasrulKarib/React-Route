@@ -5,12 +5,7 @@ import '../App.css'
 
 const Blog = () => {
   const navigate = useNavigate()
-  /* 
-    useNavigate:
-      ~ Navigate to different routes based on logic rather than just through <Link> components.
-      ~ Navigate based on conditions, such as form validation or user authentication status.
-      ~ Redirect users after certain actions, like logging in or submitting a form.
-  */
+  
   const [blog, setData]= useState(data)
 
   const truncate = (str, num) =>{

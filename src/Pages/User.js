@@ -6,13 +6,7 @@ const User = () => {
   const [id, setId] = useState(101);
   const [age, setAge] = useState("");
   const [searchParam, setSearchParam] = useSearchParams();
-  /*
-    useSearchParam:
-        ~ It is used to read and modify the query parameters of the URL in a React component. 
-        ~ Easily read and update URL query parameters.
-        ~ Maintain state through URL parameters, making it shareable and bookmarkable.
-        ~ Handle routing based on query parameters.
-  */
+  
   const handleSubmit =(e) =>{
     e.preventDefault();
     setSearchParam({name : name, id : id, age: age});
