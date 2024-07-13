@@ -12,17 +12,17 @@ const User = () => {
     setSearchParam({name : name, id : id, age: age});
   }
   return (
-    <div>
+    <div style={{display:'flex', justifyContent:'center',alignItems:'center'}}>
      <form onSubmit={handleSubmit}> 
         <input 
-        style = {{margin:'5px', height:'3vh', padding:'2px'}}
+        style = {{borderRadius:'5px' ,margin:'5px', height:'3vh', padding:'2px'}}
         placeholder='Add Name'
         value = {name} 
         onChange = {(e) =>
         setName(e.target.value)
         }/>
         <input 
-        style = {{margin:'5px', height:'3vh', padding:'2px'}}
+        style = {{ borderRadius:'5px', margin:'5px ', height:'3vh', padding:'2px'}}
         placeholder='Add Age'
         value = {age} 
         onChange = {(e) =>

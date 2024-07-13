@@ -5,9 +5,10 @@ const Navbar = () => {
     
   return (
     <nav>
-        <NavLink to = '/' >Home</NavLink>
-        <NavLink to = '/contact' >Contact</NavLink>
-        <NavLink to = '/blogs' >Blog</NavLink>
+        <NavLink to = '/' style={{fontFamily:'Trebuchet MS'}}>Home</NavLink>
+        <NavLink to = '/contact' style={{fontFamily:'Trebuchet MS'}}>Contact</NavLink>
+        <NavLink to = '/blogs' style={{fontFamily:'Trebuchet MS'}}>Blog</NavLink>
+        <NavLink to = '/user' style={{fontFamily:'Trebuchet MS'}}>User</NavLink>
     </nav>
   )
 }

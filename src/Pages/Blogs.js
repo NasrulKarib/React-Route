@@ -1,13 +1,12 @@
-import React,{useState} from 'react'
+import React,{useContext} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import {data} from './Blogdata'
+import { BlogContext } from '../Components/BlogContext'
 import '../App.css'
 
 const Blog = () => {
   const navigate = useNavigate()
+  const {blogs}= useContext(BlogContext);
   
-  const [blog, setData]= useState(data)
-
   const truncate = (str, num) =>{
     if(str.length > num){
       return str.slice(0,num) + "..."
@@ -15,11 +14,17 @@ const Blog = () => {
     else return str;
 
   }
+
+
   return (
     <div >
       <h1 className='title'>This is blog page</h1>
+      <div style={{display:'flex', justifyContent:'center'}}>
+        <button className='button'  onClick={() => navigate('/addblog')}>Add Blog</button>
+      </div>
+      
       <div className= "section">
-        {blog.map(value =>{
+        {blogs.map(value =>{
           const {id, title, desp} = value;
           return (
           <div className="article">
@@ -29,8 +34,9 @@ const Blog = () => {
           </div>)
         })}
       </div>
-      
-    <button className ='button' onClick={() => navigate('/')}>Go to home page</button>
+      <div style={{display:'flex', justifyContent:'center'}}>
+        <button className ='button' onClick={() => navigate('/')}>Go to home page</button>
+      </div>
     </div>
 
 
